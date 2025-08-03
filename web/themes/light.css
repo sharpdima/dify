@@ -1,6 +1,6 @@
 /* Attention: Generate by code. Don't update by hand!!! */
 html[data-theme="light"] {
-  --color-components-input-bg-normal: rgb(200 206 218 / 0.25);
+  --color-components-input-bg-normal: rgba(200, 214, 218, 0.25);
   --color-components-input-text-placeholder: #98a2b2;
   --color-components-input-bg-hover: rgb(200 206 218 / 0.14);
   --color-components-input-bg-active: #f9fafb;
