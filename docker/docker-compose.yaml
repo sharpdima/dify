@@ -866,8 +866,10 @@ services:
       - api
       - web
     ports:
-      - "${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-80}"
-      - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
+      - "8080:80" # پورت خارجی 8080، پورت داخلی 80
+      - "4433:443" # پورت خارجی 4433، پورت داخلی 443 (برای جلوگیری از تداخل با NPM)
+        # - "${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-80}"
+        # - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
 
   # The Weaviate vector store.
   weaviate:
