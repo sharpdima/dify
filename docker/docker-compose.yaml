@@ -575,6 +575,8 @@ services:
     volumes:
       # Mount the storage directory to the container, for storing user files.
       - ./volumes/app/storage:/app/api/storage
+      - ./custom_prompts/prompts.py:/app/api/core/llm_generator/prompts.py
+
     networks:
       - ssrf_proxy_network
       - default
